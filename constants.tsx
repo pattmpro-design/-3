@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Review, ServiceCardProps } from './types';
+import { Review, ServiceCardProps } from './types.ts';
 
 export const PRIMARY_COLOR = 'text-teal-600';
 export const PRIMARY_BG = 'bg-teal-600';

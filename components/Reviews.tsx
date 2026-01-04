@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { REVIEWS } from '../constants';
+import { REVIEWS } from '../constants.tsx';
 
 const Reviews: React.FC = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white" id="reviews">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-1 rounded-full bg-slate-100 text-slate-600 text-xs font-bold mb-4">
@@ -18,9 +18,9 @@ const Reviews: React.FC = () => {
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {REVIEWS.map((review) => (
-            <div key={review.id} className="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col hover:bg-white hover:shadow-xl transition-all">
+            <div key={review.id} className="p-8 rounded-3xl bg-slate-50 border border-slate-100 flex flex-col hover:bg-white hover:shadow-xl transition-all group">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-400">
+                <div className="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center text-slate-400 group-hover:bg-teal-100 group-hover:text-teal-600 transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                   </svg>

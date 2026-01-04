@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { SERVICES } from '../constants';
+import { SERVICES } from '../constants.tsx';
 
 const Services: React.FC = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-white" id="services">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">
@@ -24,7 +24,7 @@ const Services: React.FC = () => {
               }`}
             >
               {service.highlight && (
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-teal-600 text-white px-4 py-1 rounded-full text-xs font-bold">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-teal-600 text-white px-4 py-1 rounded-full text-xs font-bold whitespace-nowrap">
                   가장 추천하는 서비스
                 </div>
               )}
@@ -77,8 +77,8 @@ const Services: React.FC = () => {
               
               <button className={`w-full py-4 rounded-xl font-bold transition-all ${
                 service.highlight 
-                ? 'bg-teal-600 text-white hover:bg-teal-700' 
-                : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                ? 'bg-teal-600 text-white hover:bg-teal-700 active:scale-95' 
+                : 'bg-slate-100 text-slate-700 hover:bg-slate-200 active:scale-95'
               }`}>
                 {service.buttonText}
               </button>
